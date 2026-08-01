@@ -2,6 +2,8 @@
 
 This is a example of the Factory design pattern.
 
+You can go [HERE](https://github.com/Davidp0240/Object-Oriented-Programming-/blob/main/Design_Patterns/Creational/Factory/Operation_System/FACTORY_MAP.md) to view the pattern map.
+
 The idea is that instead of creating the object directly in `Main`, I let
 `SystemFactory` decide which operating system object to create.
 
