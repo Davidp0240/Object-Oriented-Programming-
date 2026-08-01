@@ -1,18 +1,15 @@
 # Factory Pattern - Operation System Example
 
-This folder is a small Java example of the Factory design pattern.
+This is a example of the Factory design pattern.
 
 The idea is that instead of creating the object directly in `Main`, I let
 `SystemFactory` decide which operating system object to create.
 
 So instead of writing something like:
-
 ```java
 OperationSystem system = new MacOS();
 ```
-
 I can write:
-
 ```java
 OperationSystem system = SystemFactory.yourSystem(SystemType.MACOS);
 ```
@@ -21,7 +18,6 @@ That means `Main` does not need to know the exact class it is creating. It just
 asks the factory for the system it wants.
 
 ## What The Code Does
-
 The program creates one operating system object and then calls three methods on
 it:
 
@@ -33,11 +29,10 @@ system.save();
 
 Right now, `Main` asks for `MACOS`, so the output is:
 
-```text
 MacOS: reading file
 MacOS: writing into file
 MacOS: saving file
-```
+
 
 If I change this line in `Main.java`:
 
